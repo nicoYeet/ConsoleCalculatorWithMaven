@@ -37,4 +37,10 @@ public class CalculatorTest {
 	public void testDivisionDivisionDurch0WirftException() {
 		testee.division(20, 0);
 	}
+	
+	@Test
+	public void testDivisionFailsWennExceptionWirft()
+		throws ArithmeticException{
+			testee.division(30, 10);
+	}
 }
