@@ -32,4 +32,9 @@ public class CalculatorTest {
 	public void testSubtractionEinPositiverEinNegativerIsOk() {
 		assertTrue(testee.subtraktion(10, -5) == 15);
 	}
+	
+	@Test(expected = ArithmeticException.class)
+	public void testDivisionDivisionDurch0WirftException() {
+		testee.division(20, 0);
+	}
 }
