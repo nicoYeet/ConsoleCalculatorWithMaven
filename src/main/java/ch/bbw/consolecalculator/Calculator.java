@@ -23,6 +23,6 @@ public class Calculator {
 	}
 	
 	private int summeUndMultiplikation(int value1, int value2, int value3) {
-		return (value1 + value2) * value3;
+		return (value1 + value2) * value3;    //kann man nicht einfach so testen weil privat
 	}
 }
