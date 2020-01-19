@@ -68,4 +68,9 @@ public class CalculatorTest {
 	public void testQuadrierenNegativIsOk() {
 		assertTrue(testee.quadrieren(-4) == 16);
 	}
+	
+	@Test
+	public void testSummeZweiNegativeIsOk() {
+		assertTrue(testee.summe(-10, -20) == -30);
+	}
 }
