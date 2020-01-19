@@ -98,4 +98,10 @@ public class CalculatorTest {
 	public void testSubtraktion0UndNegativeZahlIsOk(){
 		assertTrue(testee.subtraktion(0, -10) == 10);
 	}
+	
+	@Test
+	public void testSummeZahlUndMaxIntIsOk() 
+	throws Exception{
+		testee.summe(10, Integer.MAX_VALUE);
+	}
 }
