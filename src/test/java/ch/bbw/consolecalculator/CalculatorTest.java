@@ -110,4 +110,10 @@ public class CalculatorTest {
 	throws Exception{
 		testee.subtraktion(-10, Integer.MAX_VALUE);
 	}
+	
+	@Test
+	public void testSummeZahlUndMinIntIsOk() 
+	throws Exception{
+		testee.summe(-10, Integer.MIN_VALUE);
+	}
 }
