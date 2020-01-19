@@ -93,4 +93,9 @@ public class CalculatorTest {
 	public void testSumme0UndNegativeZahlIsOk(){
 		assertTrue(testee.summe(0, -10) == -10);
 	}
+	
+	@Test
+	public void testSubtraktion0UndNegativeZahlIsOk(){
+		assertTrue(testee.subtraktion(0, -10) == 10);
+	}
 }
