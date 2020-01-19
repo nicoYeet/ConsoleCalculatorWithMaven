@@ -122,4 +122,9 @@ public class CalculatorTest {
 	throws Exception{
 		testee.subtraktion(10, Integer.MIN_VALUE);
 	}
+	
+	@Test(expected = NumberFormatException.class)
+	public void testSummeZahlStringThrowsException() {
+		testee.summe(10, Integer.parseInt("hallo"));
+	}
 }
