@@ -48,4 +48,9 @@ public class CalculatorTest {
 	public void testMultiplikationZweiPositiveIsOk() {
 		assertTrue(testee.multiplikation(10, 5) == 50);
 	}
+	
+	@Test
+	public void testMultiplikationEinPositiveEinNegativeIsOk() {
+		assertTrue(testee.multiplikation(10, -5) == -50);
+	}
 }
