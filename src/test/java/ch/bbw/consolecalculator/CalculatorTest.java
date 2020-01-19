@@ -43,4 +43,9 @@ public class CalculatorTest {
 		throws ArithmeticException{
 			testee.division(30, 10);
 	}
+	
+	@Test
+	public void testMultiplikationZweiPositiveIsOk() {
+		assertTrue(testee.multiplikation(10, 5) == 50);
+	}
 }
