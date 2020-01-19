@@ -14,7 +14,11 @@ public class Calculator {
 		return value1 / value2;
 	}
 	
-	public int multiplikation(int value1, int value2) {
+	protected int multiplikation(int value1, int value2) {
 		return value1 * value2;
+	}
+	
+	int quadrieren(int value1) {
+		return value1 * value1;
 	}
 }
