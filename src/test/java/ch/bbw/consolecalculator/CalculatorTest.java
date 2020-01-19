@@ -68,4 +68,68 @@ public class CalculatorTest {
 	public void testQuadrierenNegativIsOk() {
 		assertTrue(testee.quadrieren(-4) == 16);
 	}
+	
+	@Test
+	public void testSummeZweiNegativeIsOk() {
+		assertTrue(testee.summe(-10, -20) == -30);
+	}
+	
+	@Test
+	public void testSubtraktionZweiNegativeIsOk() {
+		assertTrue(testee.subtraktion(-10, -20) == 10);
+	}
+	
+	@Test
+	public void testSumme0UndPositiveZahlIsOk() {
+		assertTrue(testee.summe(0, 10) == 10);
+	}
+	
+	@Test
+	public void testSubtraktion0UndPositiveZahlIsOk() {
+		assertTrue(testee.subtraktion(0, 10) == -10);
+	}
+	
+	@Test
+	public void testSumme0UndNegativeZahlIsOk(){
+		assertTrue(testee.summe(0, -10) == -10);
+	}
+	
+	@Test
+	public void testSubtraktion0UndNegativeZahlIsOk(){
+		assertTrue(testee.subtraktion(0, -10) == 10);
+	}
+	
+	@Test
+	public void testSummeZahlUndMaxIntIsOk() 
+	throws Exception{
+		testee.summe(10, Integer.MAX_VALUE);
+	}
+	
+	@Test
+	public void testSubtraktionZahlUndMaxIntIsOk() 
+	throws Exception{
+		testee.subtraktion(-10, Integer.MAX_VALUE);
+	}
+	
+	@Test
+	public void testSummeZahlUndMinIntIsOk() 
+	throws Exception{
+		testee.summe(-10, Integer.MIN_VALUE);
+	}
+	
+	@Test
+	public void testSubtraktionZahlUndMinIntIsOk() 
+	throws Exception{
+		testee.subtraktion(10, Integer.MIN_VALUE);
+	}
+	
+	@Test(expected = NumberFormatException.class)
+	public void testSummeZahlStringThrowsException() {
+		testee.summe(10, Integer.parseInt("hallo"));
+	}
+	
+	@Test(expected = NumberFormatException.class)
+	public void testSubtraktionZahlStringThrowsException() {
+		testee.subtraktion(10, Integer.parseInt("hallo"));
+	}
 }
