@@ -21,4 +21,8 @@ public class Calculator {
 	int quadrieren(int value1) {
 		return value1 * value1;
 	}
+	
+	private int summeUndMultiplikation(int value1, int value2, int value3) {
+		return (value1 + value2) * value3;
+	}
 }
