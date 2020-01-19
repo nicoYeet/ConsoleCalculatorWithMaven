@@ -63,4 +63,9 @@ public class CalculatorTest {
 	public void testQuadrierenPositivIsOk() {
 		assertTrue(testee.quadrieren(4) == 16);
 	}
+	
+	@Test 
+	public void testQuadrierenNegativIsOk() {
+		assertTrue(testee.quadrieren(-4) == 16);
+	}
 }
