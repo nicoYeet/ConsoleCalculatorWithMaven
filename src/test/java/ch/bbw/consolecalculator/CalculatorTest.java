@@ -127,4 +127,9 @@ public class CalculatorTest {
 	public void testSummeZahlStringThrowsException() {
 		testee.summe(10, Integer.parseInt("hallo"));
 	}
+	
+	@Test(expected = NumberFormatException.class)
+	public void testSubtraktionZahlStringThrowsException() {
+		testee.subtraktion(10, Integer.parseInt("hallo"));
+	}
 }
