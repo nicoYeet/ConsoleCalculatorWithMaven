@@ -104,4 +104,10 @@ public class CalculatorTest {
 	throws Exception{
 		testee.summe(10, Integer.MAX_VALUE);
 	}
+	
+	@Test
+	public void testSubtraktionZahlUndMaxIntIsOk() 
+	throws Exception{
+		testee.subtraktion(-10, Integer.MAX_VALUE);
+	}
 }
