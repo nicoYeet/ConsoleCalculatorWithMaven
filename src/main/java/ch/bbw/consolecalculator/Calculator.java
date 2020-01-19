@@ -13,4 +13,16 @@ public class Calculator {
 	public double division(int value1, int value2) {
 		return value1 / value2;
 	}
+	
+	protected int multiplikation(int value1, int value2) {
+		return value1 * value2;
+	}
+	
+	int quadrieren(int value1) {
+		return value1 * value1;
+	}
+	
+	private int summeUndMultiplikation(int value1, int value2, int value3) {
+		return (value1 + value2) * value3;    //kann man nicht einfach so testen weil privat
+	}
 }

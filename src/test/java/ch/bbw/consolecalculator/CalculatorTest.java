@@ -43,4 +43,29 @@ public class CalculatorTest {
 		throws ArithmeticException{
 			testee.division(30, 10);
 	}
+	
+	@Test
+	public void testMultiplikationZweiPositiveIsOk() {
+		assertTrue(testee.multiplikation(10, 5) == 50);
+	}
+	
+	@Test
+	public void testMultiplikationEinPositiveEinNegativeIsOk() {
+		assertTrue(testee.multiplikation(10, -5) == -50);
+	}
+	
+	@Test
+	public void testMultiplikationZweiNegativeIsOk() {
+		assertTrue(testee.multiplikation(-10, -5) == 50);
+	}
+	
+	@Test 
+	public void testQuadrierenPositivIsOk() {
+		assertTrue(testee.quadrieren(4) == 16);
+	}
+	
+	@Test 
+	public void testQuadrierenNegativIsOk() {
+		assertTrue(testee.quadrieren(-4) == 16);
+	}
 }
