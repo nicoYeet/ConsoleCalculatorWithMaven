@@ -153,4 +153,10 @@ public class CalculatorTest {
 	throws Exception{
 		testee.division(10, Integer.MAX_VALUE);
 	}
+	
+	@Test
+	public void testDivisionZahlUndMinIntIsOk() 
+	throws Exception{
+		testee.division(10, Integer.MIN_VALUE);
+	}
 }
