@@ -159,4 +159,9 @@ public class CalculatorTest {
 	throws Exception{
 		testee.division(10, Integer.MIN_VALUE);
 	}
+	
+	@Test
+	public void testDivisionDurchSichSelbstIsOk() {
+		assertTrue(testee.division(13, 13) == 1);
+	}
 }
