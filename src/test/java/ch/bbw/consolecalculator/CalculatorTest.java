@@ -132,4 +132,9 @@ public class CalculatorTest {
 	public void testSubtraktionZahlStringThrowsException() {
 		testee.subtraktion(10, Integer.parseInt("hallo"));
 	}
+	
+	@Test
+	public void testDivisionZweiPositiveIsOk() {
+		assertTrue(testee.division(50, 5) == 10);
+	}
 }
