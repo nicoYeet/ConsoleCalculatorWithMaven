@@ -132,4 +132,36 @@ public class CalculatorTest {
 	public void testSubtraktionZahlStringThrowsException() {
 		testee.subtraktion(10, Integer.parseInt("hallo"));
 	}
+	
+	@Test
+	public void testDivisionZweiPositiveIsOk() {
+		assertTrue(testee.division(50, 5) == 10);
+	}
+	
+	@Test
+	public void testDivisionEinPositiveEinNegativeIsOk() {
+		assertTrue(testee.division(50, -5) == -10);
+	}
+	
+	@Test
+	public void testDivisionZweiNegativeIsOk() {
+		assertTrue(testee.division(-50, -5) == 10);
+	}
+	
+	@Test
+	public void testDivisionZahlUndMaxIntIsOk() 
+	throws Exception{
+		testee.division(10, Integer.MAX_VALUE);
+	}
+	
+	@Test
+	public void testDivisionZahlUndMinIntIsOk() 
+	throws Exception{
+		testee.division(10, Integer.MIN_VALUE);
+	}
+	
+	@Test
+	public void testDivisionDurchSichSelbstIsOk() {
+		assertTrue(testee.division(13, 13) == 1);
+	}
 }
