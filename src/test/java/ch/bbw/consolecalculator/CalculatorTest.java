@@ -147,4 +147,10 @@ public class CalculatorTest {
 	public void testDivisionZweiNegativeIsOk() {
 		assertTrue(testee.division(-50, -5) == 10);
 	}
+	
+	@Test
+	public void testDivisionZahlUndMaxIntIsOk() 
+	throws Exception{
+		testee.division(10, Integer.MAX_VALUE);
+	}
 }
