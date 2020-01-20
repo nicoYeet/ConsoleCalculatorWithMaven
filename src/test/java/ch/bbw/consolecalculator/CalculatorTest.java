@@ -137,4 +137,9 @@ public class CalculatorTest {
 	public void testDivisionZweiPositiveIsOk() {
 		assertTrue(testee.division(50, 5) == 10);
 	}
+	
+	@Test
+	public void testDivisionEinPositiveEinNegative() {
+		assertTrue(testee.division(50, -5) == -10);
+	}
 }
